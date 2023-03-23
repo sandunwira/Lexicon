@@ -1,2 +1,2 @@
 # RhythmWorks
-An attempt to make an audio player using TypeScript
+An attempt to make an audio player using Tauri [Work In Progress]
