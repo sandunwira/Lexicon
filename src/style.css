@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #0f0f0f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.splashscreen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* DISABLE USER SELECTION */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.splashscreen img {
+  height: 50px;
+}

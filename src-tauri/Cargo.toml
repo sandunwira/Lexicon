@@ -1,0 +1,30 @@
+[package]
+name = "lexicon"
+version = "1.0.0"
+description = "An opensource dictionary app"
+categories = ["visualization"]
+keywords = ["dictionary", "tauri", "webview2", "rust", "cargo", "json", "html", "css", "javascript"]
+authors = ["you"]
+license = "MIT"
+repository = "https://github.com/sandunwira/Lexicon"
+publish = false
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.2.1", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+tauri-bundler = "1.1.2"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.2", features = ["shell-open", "window-set-fullscreen", "window-set-resizable"] }
+
+[features]
+# by default Tauri runs in production mode
+# when `tauri dev` runs it is executed with `cargo run --no-default-features` if `devPath` is an URL
+default = ["custom-protocol"]
+# this feature is used for production builds or when `devPath` points to the filesystem
+# DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]
