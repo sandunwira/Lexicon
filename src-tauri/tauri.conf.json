@@ -7,7 +7,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "Lexicon",
+    "productName": "Lexicon Dictionary",
     "version": "1.0.0"
   },
   "tauri": {
@@ -70,7 +70,7 @@
     },
     "windows": [
       {
-        "title": "Lexicon",
+        "title": "Lexicon Dictionary",
         "width": 1500,
         "height": 750,
         "url": "index.html",
@@ -82,7 +82,7 @@
         "visible": false
       },
       {
-        "title": "Lexicon",
+        "title": "Lexicon Dictionary",
         "width": 450,
         "height": 200,
         "url": "splashscreen.html",
