@@ -8,4 +8,6 @@
 
 # Lexicon
 
-An attempt to make a dictionary app using Tauri [Work In Progress]
+**_THIS REPOSITORY IS ARCHIVED NOW_**
+
+### There will be no updates for this repo from now on.

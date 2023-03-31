@@ -19,7 +19,9 @@ form.addEventListener("submit", function (event) {
       let htmlData = "";
       // Loop through the data array
       for (let i = 0; i < data.length; i++) {
-        htmlData += data[i].word;
+        htmlData += '<p>Word is: ' + data[i].word + ' </p>';
+        htmlData += '<br>';
+        htmlData += '<p>Meaning: ' + data[i].meanings.definition[i] + ' </p>';
       }
       // Insert the HTML into the container
       container.innerHTML = htmlData;
